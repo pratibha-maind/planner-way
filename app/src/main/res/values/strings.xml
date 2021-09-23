@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Planner Way</string>
+
+    <!-- Sign in strings-->
+    <string name="signin">Signin</string>
+    <string name="createAccount">Create Account</string>
+    <string name="or">Or</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="passwordConstraint">*Password should contain atleast 8 characters</string>
+    <string name="enterEmail">Enter your accound email</string>
+    <string name="enterPassword">Enter your accound password</string>
+</resources>

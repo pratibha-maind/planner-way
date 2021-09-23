@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1017214591492",
+    "project_id": "planner-way",
+    "storage_bucket": "planner-way.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017214591492:android:17a3c780ced0de744dcb51",
+        "android_client_info": {
+          "package_name": "com.master.plannerway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1017214591492-hk03002gapukpmtmovbllbu6065o4gth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOtVIGRn9i0umcFwuAX53VRxuniPkjs1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1017214591492-hk03002gapukpmtmovbllbu6065o4gth.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

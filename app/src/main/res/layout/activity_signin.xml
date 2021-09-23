@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/signinbackground"
+    tools:context=".SigninActivity">
+
+    <GridLayout
+        android:id="@+id/authGridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_marginHorizontal="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline">
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_columnSpan="2"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin"
+            android:autofillHints="@string/enterEmail"
+            android:background="@drawable/roundcorner"
+            android:backgroundTint="@color/white"
+            android:gravity="center|start"
+            android:hint="@string/enterEmail"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/text_padding"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            android:translationZ="20dp"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_columnSpan="2"
+            android:layout_gravity="center_horizontal"
+            android:autofillHints="@string/enterPassword"
+            android:background="@drawable/roundcorner"
+            android:backgroundTint="@color/white"
+            android:gravity="start|center"
+            android:hint="@string/enterPassword"
+            android:inputType="textPassword"
+            android:padding="@dimen/text_padding"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size"
+            android:translationZ="20dp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:layout_columnSpan="2"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/margin"
+            android:text="@string/passwordConstraint"
+            android:textSize="12sp"
+            android:textColor="@color/secondary"/>
+
+        <TextView
+            android:id="@+id/forgotpasswordTextView"
+            android:layout_columnSpan="2"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginTop="5dp"
+            android:focusable="true"
+            android:text="@string/forgotPassword"
+            android:textColor="@color/teal_700"
+            android:textSize="14sp"
+            android:translationZ="20dp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/createAccountButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:padding="@dimen/text_padding"
+            android:backgroundTint="@color/primary"
+            android:text="@string/createAccount"
+            android:translationZ="10dp"/>
+
+
+        <Button
+            android:id="@+id/signinButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/margin"
+            android:padding="@dimen/text_padding"
+            android:backgroundTint="@color/primary"
+            android:clickable="true"
+            android:text="@string/signin"
+            android:translationZ="10dp"/>
+
+
+        <TextView
+            android:layout_columnSpan="2"
+            android:layout_gravity="center"
+            android:text="@string/or"
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/text_size" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/googlesigninButton"
+            android:layout_columnSpan="2"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin"
+            android:focusable="true" />
+
+    </GridLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/authGridLayout" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
